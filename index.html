@@ -19,13 +19,14 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
   <body>
-    <header>
+    <header class="hearder">
       <h1 class="animate__animated animate__zoomInUp animate__delay-2s 2s">
         Amadu Hamza
       </h1>
@@ -33,20 +34,20 @@
         Software Engineer - FrontEnd
       </p>
       <div>
-        <button>Contact via Email</button>
-        <button>Download Resume</button>
+        <button class="button">Contact via Email</button>
+        <button class="button">Download Resume</button>
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <section>
-        <h2>My Skills</h2>
+        <h2 class="skill">My Skills</h2>
         <!-- List your skills here -->
       </section>
 
-      <section>
+      <section class="project-section">
         <h2>Projects I Built</h2>
-        <article>
+        <article class="article">
           <!-- Replace these placeholders with actual content -->
           <img src="project-image.jpg" alt="Project Image Description" />
           <h3>Project Title</h3>
@@ -59,12 +60,16 @@
 
     <footer>
       <p>FOLLOW ME ON MY SOCIALS.</p>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contacts</a></li>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contacts</a>
+          </li>
         </ul>
       </nav>
     </footer>
