@@ -366,7 +366,7 @@ html {
 }
 
 :root {
-  --color-primary: #ffc300;
+  --color-primary: #dfac06;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
@@ -380,7 +380,7 @@ html {
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
-  --font-size-x-large: 2.3rem;
+  --font-size-x-large: 4.5rem;
   --font-size-xx-large: 4.8rem;
 
   --font-weight-regular: 400;
@@ -475,34 +475,38 @@ a:active {
 }
 
 .button {
-  display: var(--button-display);
-  padding: var(--button-padding);
-  border: var(--button-border);
-  font-size: var(--button-font-size);
-  color: var(--button-color);
-  text-decoration: var(--button-text-decoration);
-  cursor: pointer;
-  border-radius: 20px;
-  background-color: var(--color-primary);
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #dfac06;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+.btn-sec {
+  display: flex;
+  margin-right: 20px;
+  justify-content: space-around;
 }
 
 .button:hover {
-  color: var(--button-hover-color);
-  text-decoration: var(--button-hover-text-decoration);
-  background: #5a4a13;
-  transition-duration: var(--transition-duration);
-  transition-property: color, background-color;
+  letter-spacing: 3px;
+  background-color: var(--color-primary);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(254, 216, 92) 0px 7px 29px 0px;
 }
 
-.button-primary {
-  color: var(--color-white);
-  background: var(--color-primary);
+.button:active {
+  letter-spacing: 3px;
+  background-color: hsl(46, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
 }
 
-.button-primary:hover {
-  color: var(--color-primary);
-  background: var(--color-white);
-}
 @media screen and (max-width: 480px) {
   html {
     font-size: 57%;
@@ -526,18 +530,63 @@ a:active {
   white-space: nowrap;
 }
 .main {
+  margin: 35px;
 }
 .header-container {
   display: flex;
-  background-color: red;
+
+  margin: 35px;
 }
 
 .header-flex-item {
   flex: 1;
 }
 .header-profile-im {
-  background-color: aqua;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-description {
-  background-color: ;
+  padding: 10px;
+}
+.radius {
+  background-color: var(--color-primary);
+  height: 400px;
+  width: 400px;
+  border-radius: 32% 38% 48% / 19% 62% 14% 52%;
+}
+.img-back {
+  background-color: var(--color-primary);
+
+  border-radius: 32% 38% 48% / 19% 62% 14% 52%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.animate__animated {
+  font-size: var(--font-size-x-large);
+}
+.animate__rollIn {
+  font-size: 30px;
+  margin-top: 0%;
+}
+.animate__zoomInUp {
+  font-size: 60px;
+}
+.btn-sec {
+  margin: 35px;
+  margin-left: 0;
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20%;
 }
