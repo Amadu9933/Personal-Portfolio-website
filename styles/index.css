@@ -371,7 +371,7 @@ html {
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
-  --text-color: var(--color-black);
+  --text-color: var(--color-light-grey);
 
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -421,7 +421,7 @@ html {
   --button-font-size: var(--font-size-large);
   --button-hover-color: var(--color-white);
   --button-hover-text-decoration: none;
-  --button-hover-background: var(--color-primary);
+  --button-hover-background: var(--color-dark-grey);
 
   --header-padding: 4rem 0 0;
   --header-logo-position: relative;
@@ -445,6 +445,7 @@ body {
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
+  background-color: #010617e7;
 }
 h1,
 h2,
@@ -481,12 +482,14 @@ a:active {
   color: var(--button-color);
   text-decoration: var(--button-text-decoration);
   cursor: pointer;
+  border-radius: 20px;
+  background-color: var(--color-primary);
 }
 
 .button:hover {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
-  background: var(--button-hover-background);
+  background: #5a4a13;
   transition-duration: var(--transition-duration);
   transition-property: color, background-color;
 }
@@ -523,4 +526,18 @@ a:active {
   white-space: nowrap;
 }
 .main {
+}
+.header-container {
+  display: flex;
+  background-color: red;
+}
+
+.header-flex-item {
+  flex: 1;
+}
+.header-profile-im {
+  background-color: aqua;
+}
+.header-description {
+  background-color: ;
 }
