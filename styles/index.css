@@ -551,24 +551,24 @@ a:active {
 .header-description {
   padding: 10px;
 }
-.radius {
-  background-color: var(--color-primary);
-  height: 400px;
-  width: 400px;
-  border-radius: 32% 38% 48% / 19% 62% 14% 52%;
-}
+
 .img-back {
   background-color: var(--color-primary);
 
-  border-radius: 32% 38% 48% / 19% 62% 14% 52%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 70%;
   object-fit: cover;
+  border-radius: 54% 10% 0% / 59% 10% 86% 10%;
+}
+.profile-img-ctn {
+  z-index: 100;
+  height: 450px;
+  width: 450px;
+  margin-left: -350px;
 }
 .animate__animated {
   font-size: var(--font-size-x-large);
@@ -589,4 +589,85 @@ a:active {
   height: 100%;
   object-fit: cover;
   border-radius: 20%;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.icon {
+  border-radius: 20%;
+  background-color: black;
+  height: 40px;
+  width: 40px;
+}
+.nav-link {
+  display: block;
+}
+.nav {
+  background-color: #010617e7;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid whitesmoke;
+  left: 0;
+  z-index: 100;
+  height: 90px;
+  width: 100%;
+}
+.nav-item:hover {
+  transform: translateY(10px);
+  transition: 100ms;
+}
+.footer {
+  height: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --section-padding: 5rem 1.5rem;
+    --section-body-padding: 2rem 0 0;
+  }
+
+  .header-container {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .profile-img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    background-color: var(--color-primary);
+  }
+  .profile-img-ctn {
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .radius {
+    background-color: #010617e7;
+  }
+  .animate__zoomInUp {
+    font-size: 40px;
+  }
+  .img-back {
+    background-color: #010617e7;
+    border-radius: 0%;
+    height: 40%;
+  }
+  [class^="col-"] {
+    margin: 0 0 3rem 0;
+  }
+
+  .col-1-3,
+  .col-1-2 {
+    width: 100%;
+  }
 }
