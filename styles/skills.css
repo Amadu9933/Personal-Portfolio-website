@@ -19,6 +19,7 @@
 }
 .skill-item {
   flex-basis: 25%;
+  display: flex;
 }
 .text {
   z-index: 1;
