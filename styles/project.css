@@ -47,14 +47,22 @@ img {
   border-radius: 4px;
   font-weight: 400;
   display: block;
-  width: 100%;
+  width: 50%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
 }
 
+.btn-ctn {
+  display: flex;
+  justify-content: space-around;
+}
+
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.12);
+}
+.cards_item:hover {
+  box-shadow: 0 8px 16px 0 rgba(182, 182, 182, 0.2);
 }
 
 .cards {
@@ -63,13 +71,18 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: black;
 }
 
 .cards_item {
   display: flex;
   padding: 1rem;
-  background-color: #010617e7;
+}
+.project-section {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 35px;
 }
 
 @media (min-width: 40rem) {
@@ -91,11 +104,16 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 5%;
 }
 
 .card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, #010617e7 40%, #ffbd41 100%);
+  background: linear-gradient(
+    to bottom left,
+    rgb(52, 52, 52) 40%,
+    #0b0b0b 100%
+  );
 }
 
 .card_title {
@@ -241,6 +259,5 @@ footer {
   margin-bottom: 170px;
 }
 .footer-h {
-  margin-left: 500px;
-  color: #ffbd41;
+  color: var(--button-color);
 }
