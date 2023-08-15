@@ -30,6 +30,8 @@
 .skill-item {
   flex-basis: 25%;
   display: flex;
+  padding: 20px;
+  text-align: center;
 }
 .text {
   z-index: 1;

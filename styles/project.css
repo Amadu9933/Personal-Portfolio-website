@@ -185,10 +185,6 @@ extarea {
   margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover,
-.rounded-social-buttons .social-button:focus {
-}
-
 .rounded-social-buttons .fa-twitter,
 .fa-facebook-f,
 .fa-linkedin,
