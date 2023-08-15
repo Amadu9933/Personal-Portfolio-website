@@ -586,7 +586,8 @@ a:link {
   padding-right: 40px;
 }
 .nav {
-  background-color: #000000;
+  background-color: rgb(21, 21, 21);
+  border-top: 1px solid gray;
   width: 100vw;
   justify-content: center;
   bottom: 0;
@@ -594,9 +595,10 @@ a:link {
   z-index: 1000;
   margin: 0 auto;
 }
-.nav-icon:hover {
-  transform: translateY(10px);
+.nav-item:hover {
   transition: 100ms;
+  background-color: #353535;
+  border-radius: 10%;
 }
 
 .footer {
