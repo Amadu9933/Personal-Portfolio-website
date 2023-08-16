@@ -1,3 +1,43 @@
-.radius {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(52, 52, 52);
+  color: whitesmoke;
+}
+main {
+  margin: 8%;
+  display: flex;
+  border: 2px solid #c5840b;
+  padding: 20px;
+  background-color: rgb(21, 21, 21);
+}
+.ctn {
+  flex: 1;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+button {
+  margin-top: 10px;
+  margin-left: 10px;
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+  background-color: #c5840b;
+  height: 20px;
+  width: 60px;
 }
