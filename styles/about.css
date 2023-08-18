@@ -41,3 +41,11 @@ button {
   height: 20px;
   width: 60px;
 }
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  img {
+    clip-path: calc();
+  }
+}
